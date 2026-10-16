@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0E9B9B" />
+    <title>CT Viewer — Quest — NOT A MEDICAL DEVICE</title>
+    <link rel="manifest" href="/AR_CTviewer/manifest.webmanifest" />
+    <link rel="icon" href="/AR_CTviewer/icons/icon-192.png" />
+    <script type="module" crossorigin src="/AR_CTviewer/assets/quest-_B-dJYaZ.js"></script>
+    <link rel="modulepreload" crossorigin href="/AR_CTviewer/assets/loader-Ct0av0HV.js">
+    <link rel="modulepreload" crossorigin href="/AR_CTviewer/assets/groups-CsGxiPzT.js">
+    <link rel="modulepreload" crossorigin href="/AR_CTviewer/assets/plane-BprKBpg_.js">
+    <link rel="stylesheet" crossorigin href="/AR_CTviewer/assets/loader-CVj2JHLl.css">
+    <link rel="stylesheet" crossorigin href="/AR_CTviewer/assets/quest-BxCg4gIA.css">
+  </head>
+  <body class="quest">
+    <!-- Persistent, not dismissable. -->
+    <div id="disclaimer" class="disclaimer" role="alert">
+      <strong>NOT A MEDICAL DEVICE</strong> — demonstrator only.
+      Not for diagnosis, treatment, or any clinical decision.
+    </div>
+
+    <!-- Landing page: also where leaving the session comes back to. -->
+    <main id="home" class="quest-home">
+      <h1>CT Viewer</h1>
+      <p class="muted">The body in mixed reality, driven with the controllers.</p>
+
+      <button id="enter" class="btn btn-primary quest-enter" type="button" disabled>Enter</button>
+      <p id="status" class="quest-status small" role="status"></p>
+
+      <div class="quest-model">
+        <label class="field" for="model">Model</label>
+        <select id="model" class="btn"></select>
+        <label class="btn">
+          Local GLB file
+          <input id="glb-file" type="file" accept=".glb" hidden />
+        </label>
+      </div>
+      <p id="model-info" class="muted small mono"></p>
+
+      <details class="quest-help small">
+        <summary>Controllers</summary>
+        <table>
+          <tr><th>Trigger</th><td>on the floor: place the body · on an organ: pull it out · short press on a pulled-out organ: it flies back · on the plane, next to the body: hold and aim where to cut</td></tr>
+          <tr><th>Joystick</th><td>left / right: turn the plane · up / down: tilt it · click: scale 1 ↔ 0.3</td></tr>
+          <tr><th>Grip</th><td>on the body: move and turn it</td></tr>
+          <tr><th>A / X</th><td>plane shown → hidden (the cut stays) → off (whole body)</td></tr>
+          <tr><th>B / Y</th><td>put everything back · long press: reset everything</td></tr>
+        </table>
+      </details>
+
+      <p class="muted small"><a href="./">Viewer</a> · <a href="hand-cut.html">hand-cut</a></p>
+    </main>
+
+    <div id="xr-host" class="quest-xr-host"></div>
+
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ct2mesh viewer — NOT A MEDICAL DEVICE</title>
+    <script type="module" crossorigin src="/AR_CTviewer/assets/main-BltJb9fl.js"></script>
+    <link rel="modulepreload" crossorigin href="/AR_CTviewer/assets/loader-Ct0av0HV.js">
+    <link rel="modulepreload" crossorigin href="/AR_CTviewer/assets/groups-CsGxiPzT.js">
+    <link rel="modulepreload" crossorigin href="/AR_CTviewer/assets/scene-DAtYPSef.js">
+    <link rel="stylesheet" crossorigin href="/AR_CTviewer/assets/loader-CVj2JHLl.css">
+  </head>
+  <body>
+    <!-- Persistent, not dismissable. A UI test checks it is present and visible. -->
+    <div id="disclaimer" class="disclaimer" role="alert">
+      <strong>NOT A MEDICAL DEVICE</strong> — research and visualisation only.
+      Not for diagnosis, treatment, or any clinical decision.
+    </div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-name">ct2mesh</span>
+        <span class="brand-sub">viewer</span>
+      </div>
+      <nav class="tabs" role="tablist">
+        <button class="tab" role="tab" data-tab="slices" aria-selected="true">Slices</button>
+        <button class="tab" role="tab" data-tab="mesh" aria-selected="false">3D</button>
+      </nav>
+      <div class="topbar-right muted small">Everything stays on this machine.</div>
+    </header>
+
+    <main>
+      <!-- Tab 1: slices, entirely client-side -->
+      <section id="tab-slices" class="tab-panel" data-tab="slices">
+        <div id="slices-empty" class="empty">
+          <div class="empty-art" aria-hidden="true"></div>
+          <h1>View a CT in slices</h1>
+          <p class="muted">Drop a <code>.nii.gz</code> anywhere on this page, or</p>
+          <label class="btn btn-primary">
+            Choose a file
+            <input id="slices-file" type="file" accept=".nii,.nii.gz,.gz" hidden />
+          </label>
+          <p id="slices-progress" class="muted small"></p>
+        </div>
+
+        <div id="slices-view" class="slices-view" hidden>
+          <div class="toolbar">
+            <div class="seg" role="group" aria-label="Orientation">
+              <button class="seg-btn" data-orientation="axial" aria-pressed="true">Axial</button>
+              <button class="seg-btn" data-orientation="coronal" aria-pressed="false">Coronal</button>
+              <button class="seg-btn" data-orientation="sagittal" aria-pressed="false">Sagittal</button>
+            </div>
+            <div class="seg" role="group" aria-label="Window preset" id="presets"></div>
+            <label class="field">L <input id="win-level" type="number" step="10" /></label>
+            <label class="field">W <input id="win-width" type="number" step="10" min="1" /></label>
+            <span class="spacer"></span>
+            <span id="slices-name" class="muted small"></span>
+            <button id="slices-close" class="btn" type="button">Close</button>
+          </div>
+          <div class="slice-stage">
+            <div id="slice-host" class="slice-host"></div>
+          </div>
+          <div class="toolbar bottom">
+            <input id="slice-slider" type="range" min="0" max="0" value="0" />
+            <span id="slice-index" class="mono small">– / –</span>
+            <span class="spacer"></span>
+            <span id="cursor" class="mono small muted">move the cursor over the image</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tab 2: 3D, reads a ct2mesh output directory -->
+      <section id="tab-mesh" class="tab-panel" data-tab="mesh" hidden>
+        <aside class="sidebar">
+          <div class="sidebar-head">
+            <div class="row">
+              <button id="mesh-open-served" class="btn btn-primary" type="button">Open /out</button>
+              <label class="btn">
+                Choose folder
+                <input id="mesh-folder" type="file" webkitdirectory multiple hidden />
+              </label>
+            </div>
+            <p id="mesh-status" class="muted small">No manifest loaded.</p>
+          </div>
+          <div id="panel-host" class="panel-host"></div>
+        </aside>
+        <div id="scene-host" class="scene-host"></div>
+        <!-- Organ drawer: the clicked structure on the CT slices -->
+        <aside id="drawer-host" class="drawer" hidden></aside>
+      </section>
+    </main>
+
+  </body>
+</html>

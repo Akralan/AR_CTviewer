@@ -1,0 +1,3069 @@
+{
+  "source": "out\\segmentation.nii.gz",
+  "backend": "reused",
+  "spacing_mm": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "axis_convention": "RAS_mm",
+  "to_gltf_matrix": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      -1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "units": "m",
+  "up_axis": "Y",
+  "transform_applied": {
+    "scale": 0.001,
+    "rotation_x_deg": -90,
+    "recentered": true,
+    "translation_m": [
+      -0.2599818773269653,
+      0.0005434158444404603,
+      0.2791091766357422
+    ],
+    "matrix": [
+      [
+        0.001,
+        0.0,
+        0.0,
+        -0.2599818773269653
+      ],
+      [
+        0.0,
+        0.0,
+        0.001,
+        0.0005434158444404603
+      ],
+      [
+        0.0,
+        -0.001,
+        0.0,
+        0.2791091766357422
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "scene_file": "scene.glb",
+  "not_a_medical_device": true,
+  "structures": [
+    {
+      "label_id": 1,
+      "name": "spleen",
+      "file": "meshes/spleen.glb",
+      "color": [
+        0.6,
+        0.2,
+        0.22
+      ],
+      "faces": 3000,
+      "volume_mm3": 154947.86868754696,
+      "bbox_mm": [
+        [
+          112.33966827392578,
+          172.48997497558594,
+          761.5079956054688
+        ],
+        [
+          205.58692932128906,
+          269.50567626953125,
+          836.5269165039062
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 2,
+      "name": "kidney_right",
+      "file": "meshes/kidney_right.glb",
+      "color": [
+        0.65,
+        0.3,
+        0.35
+      ],
+      "faces": 3000,
+      "volume_mm3": 183521.3660481853,
+      "bbox_mm": [
+        [
+          293.33984375,
+          175.27804565429688,
+          680.3402709960938
+        ],
+        [
+          371.6578674316406,
+          244.51390075683594,
+          779.5074462890625
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 3,
+      "name": "kidney_left",
+      "file": "meshes/kidney_left.glb",
+      "color": [
+        0.65,
+        0.3,
+        0.35
+      ],
+      "faces": 3000,
+      "volume_mm3": 157527.93165342548,
+      "bbox_mm": [
+        [
+          160.42112731933594,
+          178.4943389892578,
+          671.4581909179688
+        ],
+        [
+          223.50755310058594,
+          232.5023651123047,
+          791.5274047851562
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 4,
+      "name": "gallbladder",
+      "file": "meshes/gallbladder.glb",
+      "color": [
+        0.4,
+        0.65,
+        0.3
+      ],
+      "faces": 3000,
+      "volume_mm3": 26536.6227031725,
+      "bbox_mm": [
+        [
+          311.4181823730469,
+          260.3952941894531,
+          704.3840942382812
+        ],
+        [
+          344.61492919921875,
+          302.7010192871094,
+          755.6015625
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 5,
+      "name": "liver",
+      "file": "meshes/liver.glb",
+      "color": [
+        0.55,
+        0.28,
+        0.18
+      ],
+      "faces": 3000,
+      "volume_mm3": 2017116.0135831286,
+      "bbox_mm": [
+        [
+          155.54769897460938,
+          166.09536743164062,
+          677.3858032226562
+        ],
+        [
+          404.5145568847656,
+          329.5315856933594,
+          857.4951782226562
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 6,
+      "name": "stomach",
+      "file": "meshes/stomach.glb",
+      "color": [
+        0.85,
+        0.63,
+        0.42
+      ],
+      "faces": 3000,
+      "volume_mm3": 227274.39568704818,
+      "bbox_mm": [
+        [
+          160.19427490234375,
+          214.50485229492188,
+          698.4513549804688
+        ],
+        [
+          281.7520751953125,
+          329.59649658203125,
+          830.4923095703125
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 7,
+      "name": "pancreas",
+      "file": "meshes/pancreas.glb",
+      "color": [
+        0.9,
+        0.75,
+        0.4
+      ],
+      "faces": 3000,
+      "volume_mm3": 99130.96380351526,
+      "bbox_mm": [
+        [
+          175.49111938476562,
+          220.30384826660156,
+          689.47900390625
+        ],
+        [
+          302.5011901855469,
+          305.4870910644531,
+          779.531005859375
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 8,
+      "name": "adrenal_gland_right",
+      "file": "meshes/adrenal_gland_right.glb",
+      "color": [
+        0.8,
+        0.7,
+        0.35
+      ],
+      "faces": 2998,
+      "volume_mm3": 2480.076544925978,
+      "bbox_mm": [
+        [
+          287.2980651855469,
+          202.30958557128906,
+          761.3370971679688
+        ],
+        [
+          305.69561767578125,
+          232.6588592529297,
+          788.6849975585938
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 9,
+      "name": "adrenal_gland_left",
+      "file": "meshes/adrenal_gland_left.glb",
+      "color": [
+        0.8,
+        0.7,
+        0.35
+      ],
+      "faces": 3000,
+      "volume_mm3": 3227.6741533750806,
+      "bbox_mm": [
+        [
+          208.3267364501953,
+          220.32574462890625,
+          752.28857421875
+        ],
+        [
+          223.6754608154297,
+          250.70030212402344,
+          791.6668701171875
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 10,
+      "name": "lung_upper_lobe_left",
+      "file": "meshes/lung_upper_lobe_left.glb",
+      "color": [
+        0.7,
+        0.8,
+        0.88
+      ],
+      "faces": 2999,
+      "volume_mm3": 1162617.7233366352,
+      "bbox_mm": [
+        [
+          106.2569808959961,
+          187.0908203125,
+          792.5576171875
+        ],
+        [
+          235.6269073486328,
+          332.5264587402344,
+          1050.516357421875
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 11,
+      "name": "lung_lower_lobe_left",
+      "file": "meshes/lung_lower_lobe_left.glb",
+      "color": [
+        0.62,
+        0.74,
+        0.85
+      ],
+      "faces": 3000,
+      "volume_mm3": 736291.0743222334,
+      "bbox_mm": [
+        [
+          109.11029815673828,
+          166.36386108398438,
+          790.80029296875
+        ],
+        [
+          229.69720458984375,
+          306.1892395019531,
+          980.880859375
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 12,
+      "name": "lung_upper_lobe_right",
+      "file": "meshes/lung_upper_lobe_right.glb",
+      "color": [
+        0.7,
+        0.8,
+        0.88
+      ],
+      "faces": 3000,
+      "volume_mm3": 947046.9489158336,
+      "bbox_mm": [
+        [
+          253.30361938476562,
+          181.1232147216797,
+          888.4705810546875
+        ],
+        [
+          398.916748046875,
+          329.50787353515625,
+          1047.505615234375
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 13,
+      "name": "lung_middle_lobe_right",
+      "file": "meshes/lung_middle_lobe_right.glb",
+      "color": [
+        0.66,
+        0.77,
+        0.86
+      ],
+      "faces": 3000,
+      "volume_mm3": 414913.3237249103,
+      "bbox_mm": [
+        [
+          266.16680908203125,
+          234.74473571777344,
+          806.1251220703125
+        ],
+        [
+          401.9253234863281,
+          332.5949401855469,
+          926.5158081054688
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 14,
+      "name": "lung_lower_lobe_right",
+      "file": "meshes/lung_lower_lobe_right.glb",
+      "color": [
+        0.62,
+        0.74,
+        0.85
+      ],
+      "faces": 3000,
+      "volume_mm3": 781972.9864857482,
+      "bbox_mm": [
+        [
+          260.1654968261719,
+          163.42422485351562,
+          800.2740478515625
+        ],
+        [
+          401.8828430175781,
+          291.6327209472656,
+          969.299072265625
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 15,
+      "name": "esophagus",
+      "file": "meshes/esophagus.glb",
+      "color": [
+        0.8,
+        0.55,
+        0.5
+      ],
+      "faces": 3000,
+      "volume_mm3": 33739.39521634928,
+      "bbox_mm": [
+        [
+          220.37168884277344,
+          220.44654846191406,
+          809.3453369140625
+        ],
+        [
+          263.5854187011719,
+          281.6181945800781,
+          1068.5361328125
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 16,
+      "name": "trachea",
+      "file": "meshes/trachea.glb",
+      "color": [
+        0.6,
+        0.75,
+        0.85
+      ],
+      "faces": 3000,
+      "volume_mm3": 50486.173145319415,
+      "bbox_mm": [
+        [
+          202.5131378173828,
+          229.41763305664062,
+          929.3955688476562
+        ],
+        [
+          302.59429931640625,
+          305.558349609375,
+          1068.549560546875
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 17,
+      "name": "thyroid_gland",
+      "file": "meshes/thyroid_gland.glb",
+      "color": [
+        0.75,
+        0.45,
+        0.45
+      ],
+      "faces": 3000,
+      "volume_mm3": 17146.778413581877,
+      "bbox_mm": [
+        [
+          232.3637237548828,
+          275.3663330078125,
+          1032.3590087890625
+        ],
+        [
+          290.6378479003906,
+          305.6966552734375,
+          1080.64453125
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 18,
+      "name": "small_bowel",
+      "file": "meshes/small_bowel.glb",
+      "color": [
+        0.88,
+        0.7,
+        0.5
+      ],
+      "faces": 2999,
+      "volume_mm3": 826459.8283233624,
+      "bbox_mm": [
+        [
+          138.5094451904297,
+          209.6031036376953,
+          482.4908752441406
+        ],
+        [
+          354.2740478515625,
+          328.3717956542969,
+          748.9805908203125
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 4
+    },
+    {
+      "label_id": 19,
+      "name": "duodenum",
+      "file": "meshes/duodenum.glb",
+      "color": [
+        0.86,
+        0.66,
+        0.46
+      ],
+      "faces": 3000,
+      "volume_mm3": 32135.61223314978,
+      "bbox_mm": [
+        [
+          223.36727905273438,
+          266.4316101074219,
+          662.433837890625
+        ],
+        [
+          311.6374206542969,
+          311.5525817871094,
+          752.6387329101562
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 20,
+      "name": "colon",
+      "file": "meshes/colon.glb",
+      "color": [
+        0.75,
+        0.6,
+        0.4
+      ],
+      "faces": 3000,
+      "volume_mm3": 998874.6267511747,
+      "bbox_mm": [
+        [
+          118.38802337646484,
+          170.8907012939453,
+          434.5232238769531
+        ],
+        [
+          392.6899108886719,
+          324.0437927246094,
+          781.03466796875
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 2
+    },
+    {
+      "label_id": 21,
+      "name": "urinary_bladder",
+      "file": "meshes/urinary_bladder.glb",
+      "color": [
+        0.9,
+        0.85,
+        0.45
+      ],
+      "faces": 3000,
+      "volume_mm3": 75109.52978709659,
+      "bbox_mm": [
+        [
+          229.37660217285156,
+          232.42922973632812,
+          455.382080078125
+        ],
+        [
+          305.62725830078125,
+          305.64208984375,
+          491.5675964355469
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 22,
+      "name": "prostate",
+      "file": "meshes/prostate.glb",
+      "color": [
+        0.6,
+        0.45,
+        0.6
+      ],
+      "faces": 2999,
+      "volume_mm3": 30463.739002920065,
+      "bbox_mm": [
+        [
+          244.4017791748047,
+          235.32742309570312,
+          431.43743896484375
+        ],
+        [
+          290.63214111328125,
+          275.6060485839844,
+          464.6194763183594
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 25,
+      "name": "sacrum",
+      "file": "meshes/sacrum.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 3000,
+      "volume_mm3": 225144.31360407267,
+      "bbox_mm": [
+        [
+          193.34951782226562,
+          145.46890258789062,
+          431.59466552734375
+        ],
+        [
+          335.91796875,
+          226.82293701171875,
+          596.7841796875
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 26,
+      "name": "vertebrae_S1",
+      "file": "meshes/vertebrae_S1.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 3000,
+      "volume_mm3": 69644.32504748255,
+      "bbox_mm": [
+        [
+          229.43295288085938,
+          160.47311401367188,
+          548.3727416992188
+        ],
+        [
+          299.5907897949219,
+          238.61561584472656,
+          602.6123657226562
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 27,
+      "name": "vertebrae_L5",
+      "file": "meshes/vertebrae_L5.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 3000,
+      "volume_mm3": 83257.06024195533,
+      "bbox_mm": [
+        [
+          211.5720977783203,
+          160.5308837890625,
+          572.5187377929688
+        ],
+        [
+          314.4435729980469,
+          247.58421325683594,
+          629.461669921875
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 28,
+      "name": "vertebrae_L4",
+      "file": "meshes/vertebrae_L4.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 3000,
+      "volume_mm3": 81636.34131238284,
+      "bbox_mm": [
+        [
+          214.6566162109375,
+          157.53628540039062,
+          611.388916015625
+        ],
+        [
+          308.53912353515625,
+          253.5891876220703,
+          662.5364379882812
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 29,
+      "name": "vertebrae_L3",
+      "file": "meshes/vertebrae_L3.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 3000,
+      "volume_mm3": 81116.04816619393,
+      "bbox_mm": [
+        [
+          211.3951873779297,
+          160.38336181640625,
+          638.4614868164062
+        ],
+        [
+          317.4569396972656,
+          253.55201721191406,
+          695.5469360351562
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 30,
+      "name": "vertebrae_L2",
+      "file": "meshes/vertebrae_L2.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 3000,
+      "volume_mm3": 75461.11885843224,
+      "bbox_mm": [
+        [
+          211.39369201660156,
+          160.47830200195312,
+          674.4266967773438
+        ],
+        [
+          311.61181640625,
+          250.5341339111328,
+          734.6065063476562
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 31,
+      "name": "vertebrae_L1",
+      "file": "meshes/vertebrae_L1.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 2999,
+      "volume_mm3": 66411.9372809877,
+      "bbox_mm": [
+        [
+          220.51112365722656,
+          157.39952087402344,
+          713.3934936523438
+        ],
+        [
+          299.5369567871094,
+          244.533935546875,
+          770.5852661132812
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 32,
+      "name": "vertebrae_T12",
+      "file": "meshes/vertebrae_T12.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 2999,
+      "volume_mm3": 56850.90673406267,
+      "bbox_mm": [
+        [
+          229.44012451171875,
+          154.42477416992188,
+          752.394287109375
+        ],
+        [
+          284.6780700683594,
+          238.56265258789062,
+          803.617431640625
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 33,
+      "name": "vertebrae_T11",
+      "file": "meshes/vertebrae_T11.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 3000,
+      "volume_mm3": 50521.36905510615,
+      "bbox_mm": [
+        [
+          223.36785888671875,
+          154.44970703125,
+          788.4552612304688
+        ],
+        [
+          284.605224609375,
+          235.5328826904297,
+          836.6400146484375
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 34,
+      "name": "vertebrae_T10",
+      "file": "meshes/vertebrae_T10.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 2999,
+      "volume_mm3": 45375.27200276137,
+      "bbox_mm": [
+        [
+          223.40805053710938,
+          151.3592987060547,
+          812.3643798828125
+        ],
+        [
+          284.53564453125,
+          232.65786743164062,
+          866.6626586914062
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 35,
+      "name": "vertebrae_T9",
+      "file": "meshes/vertebrae_T9.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 2999,
+      "volume_mm3": 40746.459851472486,
+      "bbox_mm": [
+        [
+          220.4407501220703,
+          151.44418334960938,
+          833.389892578125
+        ],
+        [
+          284.53533935546875,
+          229.66140747070312,
+          890.6192626953125
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 36,
+      "name": "vertebrae_T8",
+      "file": "meshes/vertebrae_T8.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 3000,
+      "volume_mm3": 36505.69608982897,
+      "bbox_mm": [
+        [
+          220.43890380859375,
+          151.37405395507812,
+          854.37451171875
+        ],
+        [
+          287.58514404296875,
+          226.60885620117188,
+          917.6911010742188
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 37,
+      "name": "vertebrae_T7",
+      "file": "meshes/vertebrae_T7.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 3000,
+      "volume_mm3": 35212.073977005006,
+      "bbox_mm": [
+        [
+          217.3692626953125,
+          154.39083862304688,
+          878.3363647460938
+        ],
+        [
+          287.5641174316406,
+          229.63575744628906,
+          944.6215209960938
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 38,
+      "name": "vertebrae_T6",
+      "file": "meshes/vertebrae_T6.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 3000,
+      "volume_mm3": 33280.5667890696,
+      "bbox_mm": [
+        [
+          217.3230438232422,
+          160.4161376953125,
+          908.363037109375
+        ],
+        [
+          290.6693420410156,
+          232.63580322265625,
+          971.5067749023438
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 39,
+      "name": "vertebrae_T5",
+      "file": "meshes/vertebrae_T5.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 2999,
+      "volume_mm3": 32405.144455708138,
+      "bbox_mm": [
+        [
+          220.38003540039062,
+          163.33053588867188,
+          935.279541015625
+        ],
+        [
+          290.6164245605469,
+          238.65013122558594,
+          992.6264038085938
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 40,
+      "name": "vertebrae_T4",
+      "file": "meshes/vertebrae_T4.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 3000,
+      "volume_mm3": 30980.132608594064,
+      "bbox_mm": [
+        [
+          223.39915466308594,
+          169.38339233398438,
+          971.3889770507812
+        ],
+        [
+          290.54931640625,
+          244.66139221191406,
+          1017.5709228515625
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 41,
+      "name": "vertebrae_T3",
+      "file": "meshes/vertebrae_T3.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 2999,
+      "volume_mm3": 30044.869611823542,
+      "bbox_mm": [
+        [
+          223.4049530029297,
+          178.3607940673828,
+          998.4228515625
+        ],
+        [
+          293.56890869140625,
+          253.55946350097656,
+          1041.4932861328125
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 42,
+      "name": "vertebrae_T2",
+      "file": "meshes/vertebrae_T2.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 3000,
+      "volume_mm3": 32036.90700070653,
+      "bbox_mm": [
+        [
+          220.36705017089844,
+          187.3647003173828,
+          1020.3435668945312
+        ],
+        [
+          299.6014099121094,
+          263.5597229003906,
+          1062.58203125
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 43,
+      "name": "vertebrae_T1",
+      "file": "meshes/vertebrae_T1.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 3000,
+      "volume_mm3": 29498.983087357134,
+      "bbox_mm": [
+        [
+          217.4224853515625,
+          196.38543701171875,
+          1041.3292236328125
+        ],
+        [
+          302.5578308105469,
+          272.6324768066406,
+          1080.5926513671875
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 44,
+      "name": "vertebrae_C7",
+      "file": "meshes/vertebrae_C7.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 3000,
+      "volume_mm3": 21858.329735270934,
+      "bbox_mm": [
+        [
+          217.2819061279297,
+          205.3323974609375,
+          1062.3504638671875
+        ],
+        [
+          299.57562255859375,
+          275.66107177734375,
+          1095.6279296875
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 45,
+      "name": "vertebrae_C6",
+      "file": "meshes/vertebrae_C6.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 3000,
+      "volume_mm3": 16384.750274506554,
+      "bbox_mm": [
+        [
+          223.34967041015625,
+          223.47393798828125,
+          1086.3890380859375
+        ],
+        [
+          293.62823486328125,
+          278.6614074707031,
+          1113.669189453125
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 46,
+      "name": "vertebrae_C5",
+      "file": "meshes/vertebrae_C5.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 3000,
+      "volume_mm3": 14115.065311265973,
+      "bbox_mm": [
+        [
+          229.3441925048828,
+          232.33303833007812,
+          1101.3966064453125
+        ],
+        [
+          293.663330078125,
+          281.66192626953125,
+          1128.630615234375
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 47,
+      "name": "vertebrae_C4",
+      "file": "meshes/vertebrae_C4.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 2999,
+      "volume_mm3": 13345.244269147011,
+      "bbox_mm": [
+        [
+          232.3898468017578,
+          241.3464813232422,
+          1119.35546875
+        ],
+        [
+          293.6680603027344,
+          287.60986328125,
+          1143.6419677734375
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 48,
+      "name": "vertebrae_C3",
+      "file": "meshes/vertebrae_C3.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 3000,
+      "volume_mm3": 12521.012454595475,
+      "bbox_mm": [
+        [
+          235.3639678955078,
+          250.36923217773438,
+          1134.375732421875
+        ],
+        [
+          293.65313720703125,
+          293.6438903808594,
+          1161.7271728515625
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 49,
+      "name": "vertebrae_C2",
+      "file": "meshes/vertebrae_C2.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 2999,
+      "volume_mm3": 19198.52572137189,
+      "bbox_mm": [
+        [
+          235.37965393066406,
+          244.40025329589844,
+          1155.376708984375
+        ],
+        [
+          296.6308288574219,
+          299.64959716796875,
+          1194.6756591796875
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 50,
+      "name": "vertebrae_C1",
+      "file": "meshes/vertebrae_C1.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 3000,
+      "volume_mm3": 13432.143109381499,
+      "bbox_mm": [
+        [
+          232.3087921142578,
+          253.3816680908203,
+          1173.332763671875
+        ],
+        [
+          308.63519287109375,
+          305.5926818847656,
+          1194.66943359375
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 51,
+      "name": "heart",
+      "file": "meshes/heart.glb",
+      "color": [
+        0.72,
+        0.16,
+        0.18
+      ],
+      "faces": 2999,
+      "volume_mm3": 826534.3619578056,
+      "bbox_mm": [
+        [
+          148.42848205566406,
+          218.40988159179688,
+          806.493896484375
+        ],
+        [
+          305.1251220703125,
+          329.6701354980469,
+          956.7883911132812
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 52,
+      "name": "aorta",
+      "file": "meshes/aorta.glb",
+      "color": [
+        0.78,
+        0.12,
+        0.14
+      ],
+      "faces": 2999,
+      "volume_mm3": 295267.40567877796,
+      "bbox_mm": [
+        [
+          204.97320556640625,
+          199.50222778320312,
+          632.1763305664062
+        ],
+        [
+          278.5107421875,
+          302.4938049316406,
+          990.3108520507812
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 53,
+      "name": "pulmonary_vein",
+      "file": "meshes/pulmonary_vein.glb",
+      "color": [
+        0.28,
+        0.38,
+        0.72
+      ],
+      "faces": 3000,
+      "volume_mm3": 35008.152578085894,
+      "bbox_mm": [
+        [
+          184.4022216796875,
+          211.3815155029297,
+          878.4142456054688
+        ],
+        [
+          308.6287841796875,
+          269.6286926269531,
+          938.64892578125
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 3
+    },
+    {
+      "label_id": 54,
+      "name": "brachiocephalic_trunk",
+      "file": "meshes/brachiocephalic_trunk.glb",
+      "color": [
+        0.8,
+        0.4351,
+        0.36
+      ],
+      "faces": 3000,
+      "volume_mm3": 6988.557524364194,
+      "bbox_mm": [
+        [
+          232.29750061035156,
+          260.2959289550781,
+          986.3358764648438
+        ],
+        [
+          278.6829833984375,
+          287.6872863769531,
+          1020.64697265625
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 55,
+      "name": "subclavian_artery_right",
+      "file": "meshes/subclavian_artery_right.glb",
+      "color": [
+        0.78,
+        0.12,
+        0.14
+      ],
+      "faces": 3000,
+      "volume_mm3": 3253.931091478104,
+      "bbox_mm": [
+        [
+          275.33642578125,
+          260.3218994140625,
+          1017.3312377929688
+        ],
+        [
+          311.6927795410156,
+          281.7021789550781,
+          1047.662109375
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 56,
+      "name": "subclavian_artery_left",
+      "file": "meshes/subclavian_artery_left.glb",
+      "color": [
+        0.78,
+        0.12,
+        0.14
+      ],
+      "faces": 3000,
+      "volume_mm3": 7780.0750967981485,
+      "bbox_mm": [
+        [
+          193.30714416503906,
+          238.3932342529297,
+          986.3816528320312
+        ],
+        [
+          238.630615234375,
+          266.6861877441406,
+          1047.598388671875
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 57,
+      "name": "common_carotid_artery_right",
+      "file": "meshes/common_carotid_artery_right.glb",
+      "color": [
+        0.78,
+        0.12,
+        0.14
+      ],
+      "faces": 3000,
+      "volume_mm3": 2491.6223099637814,
+      "bbox_mm": [
+        [
+          266.29425048828125,
+          278.3314208984375,
+          1020.351806640625
+        ],
+        [
+          290.6856689453125,
+          287.7106628417969,
+          1083.689697265625
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 58,
+      "name": "common_carotid_artery_left",
+      "file": "meshes/common_carotid_artery_left.glb",
+      "color": [
+        0.78,
+        0.12,
+        0.14
+      ],
+      "faces": 3000,
+      "volume_mm3": 4764.772655707881,
+      "bbox_mm": [
+        [
+          229.34112548828125,
+          257.3135681152344,
+          986.3471069335938
+        ],
+        [
+          241.71641540527344,
+          284.65057373046875,
+          1080.6234130859375
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 59,
+      "name": "brachiocephalic_vein_left",
+      "file": "meshes/brachiocephalic_vein_left.glb",
+      "color": [
+        0.25,
+        0.35,
+        0.7
+      ],
+      "faces": 3000,
+      "volume_mm3": 15995.965290867025,
+      "bbox_mm": [
+        [
+          214.36131286621094,
+          263.3946838378906,
+          971.3800048828125
+        ],
+        [
+          278.6947937011719,
+          296.6268005371094,
+          1023.58837890625
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 60,
+      "name": "brachiocephalic_vein_right",
+      "file": "meshes/brachiocephalic_vein_right.glb",
+      "color": [
+        0.25,
+        0.35,
+        0.7
+      ],
+      "faces": 3000,
+      "volume_mm3": 13101.92283327443,
+      "bbox_mm": [
+        [
+          269.296630859375,
+          260.3430480957031,
+          980.3235473632812
+        ],
+        [
+          299.64239501953125,
+          284.71026611328125,
+          1026.6727294921875
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 61,
+      "name": "atrial_appendage_left",
+      "file": "meshes/atrial_appendage_left.glb",
+      "color": [
+        0.6726,
+        0.8,
+        0.36
+      ],
+      "faces": 2998,
+      "volume_mm3": 11265.955751390953,
+      "bbox_mm": [
+        [
+          184.34750366210938,
+          244.371826171875,
+          902.3651733398438
+        ],
+        [
+          226.67877197265625,
+          284.68798828125,
+          932.6301879882812
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 62,
+      "name": "superior_vena_cava",
+      "file": "meshes/superior_vena_cava.glb",
+      "color": [
+        0.25,
+        0.35,
+        0.7
+      ],
+      "faces": 3000,
+      "volume_mm3": 28779.569620697526,
+      "bbox_mm": [
+        [
+          266.3582458496094,
+          253.36875915527344,
+          908.3932495117188
+        ],
+        [
+          296.5892639160156,
+          284.6372985839844,
+          983.6066284179688
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 63,
+      "name": "inferior_vena_cava",
+      "file": "meshes/inferior_vena_cava.glb",
+      "color": [
+        0.25,
+        0.35,
+        0.7
+      ],
+      "faces": 3000,
+      "volume_mm3": 150071.15503915647,
+      "bbox_mm": [
+        [
+          250.2802734375,
+          229.47805786132812,
+          614.4387817382812
+        ],
+        [
+          314.50457763671875,
+          281.5069580078125,
+          866.466064453125
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 64,
+      "name": "portal_vein_and_splenic_vein",
+      "file": "meshes/portal_vein_and_splenic_vein.glb",
+      "color": [
+        0.3,
+        0.42,
+        0.68
+      ],
+      "faces": 2998,
+      "volume_mm3": 9500.35353662287,
+      "bbox_mm": [
+        [
+          160.3456573486328,
+          214.333740234375,
+          752.3125610351562
+        ],
+        [
+          320.6480712890625,
+          293.67498779296875,
+          794.6122436523438
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 2
+    },
+    {
+      "label_id": 65,
+      "name": "iliac_artery_left",
+      "file": "meshes/iliac_artery_left.glb",
+      "color": [
+        0.78,
+        0.12,
+        0.14
+      ],
+      "faces": 2999,
+      "volume_mm3": 20622.56909536586,
+      "bbox_mm": [
+        [
+          181.44236755371094,
+          244.38388061523438,
+          443.3977966308594
+        ],
+        [
+          250.63453674316406,
+          323.60198974609375,
+          638.5748901367188
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 2
+    },
+    {
+      "label_id": 66,
+      "name": "iliac_artery_right",
+      "file": "meshes/iliac_artery_right.glb",
+      "color": [
+        0.78,
+        0.12,
+        0.14
+      ],
+      "faces": 3000,
+      "volume_mm3": 28266.17537518517,
+      "bbox_mm": [
+        [
+          247.44041442871094,
+          244.37486267089844,
+          443.3197326660156
+        ],
+        [
+          350.7064514160156,
+          323.5684814453125,
+          635.5466918945312
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 67,
+      "name": "iliac_vena_left",
+      "file": "meshes/iliac_vena_left.glb",
+      "color": [
+        0.25,
+        0.35,
+        0.7
+      ],
+      "faces": 3000,
+      "volume_mm3": 68431.6870802013,
+      "bbox_mm": [
+        [
+          184.47276306152344,
+          220.471435546875,
+          443.4390869140625
+        ],
+        [
+          275.5625305175781,
+          320.5764465332031,
+          614.5159912109375
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 68,
+      "name": "iliac_vena_right",
+      "file": "meshes/iliac_vena_right.glb",
+      "color": [
+        0.25,
+        0.35,
+        0.7
+      ],
+      "faces": 3000,
+      "volume_mm3": 52045.384983244665,
+      "bbox_mm": [
+        [
+          272.4521179199219,
+          229.41090393066406,
+          443.5047912597656
+        ],
+        [
+          344.48486328125,
+          323.6429443359375,
+          614.56103515625
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 69,
+      "name": "humerus_left",
+      "file": "meshes/humerus_left.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 3000,
+      "volume_mm3": 229480.1416575013,
+      "bbox_mm": [
+        [
+          22.45328712463379,
+          196.28904724121094,
+          1032.3421630859375
+        ],
+        [
+          100.52181243896484,
+          392.81622314453125,
+          1296.7012939453125
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 70,
+      "name": "humerus_right",
+      "file": "meshes/humerus_right.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 2999,
+      "volume_mm3": 197063.00755805583,
+      "bbox_mm": [
+        [
+          413.2428283691406,
+          208.3586883544922,
+          1013.5131225585938
+        ],
+        [
+          497.5104675292969,
+          366.1717834472656,
+          1200.4556884765625
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 71,
+      "name": "scapula_left",
+      "file": "meshes/scapula_left.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 2999,
+      "volume_mm3": 167979.85086571623,
+      "bbox_mm": [
+        [
+          70.24081420898438,
+          154.31394958496094,
+          875.5328369140625
+        ],
+        [
+          193.54046630859375,
+          261.00335693359375,
+          1095.708251953125
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 72,
+      "name": "scapula_right",
+      "file": "meshes/scapula_right.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 2999,
+      "volume_mm3": 161232.12218084637,
+      "bbox_mm": [
+        [
+          323.3604736328125,
+          157.33074951171875,
+          865.9005126953125
+        ],
+        [
+          449.49127197265625,
+          266.52850341796875,
+          1083.4610595703125
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 73,
+      "name": "clavicula_left",
+      "file": "meshes/clavicula_left.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 3000,
+      "volume_mm3": 44138.862771399734,
+      "bbox_mm": [
+        [
+          118.4556655883789,
+          199.44766235351562,
+          995.3595581054688
+        ],
+        [
+          235.55691528320312,
+          305.5964050292969,
+          1089.5799560546875
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 74,
+      "name": "clavicula_right",
+      "file": "meshes/clavicula_right.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 3000,
+      "volume_mm3": 45290.86958626541,
+      "bbox_mm": [
+        [
+          278.3667907714844,
+          208.432373046875,
+          995.4286499023438
+        ],
+        [
+          407.55426025390625,
+          308.5935974121094,
+          1080.560302734375
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 75,
+      "name": "femur_left",
+      "file": "meshes/femur_left.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 2999,
+      "volume_mm3": 721513.2644569637,
+      "bbox_mm": [
+        [
+          100.40780639648438,
+          202.20968627929688,
+          -0.5434158444404602
+        ],
+        [
+          205.509033203125,
+          287.5102233886719,
+          491.78680419921875
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 76,
+      "name": "femur_right",
+      "file": "meshes/femur_right.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 2999,
+      "volume_mm3": 702208.6716728049,
+      "bbox_mm": [
+        [
+          329.51446533203125,
+          205.3083038330078,
+          -0.5056179761886597
+        ],
+        [
+          429.2515563964844,
+          293.5818786621094,
+          491.510986328125
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 77,
+      "name": "hip_left",
+      "file": "meshes/hip_left.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 3000,
+      "volume_mm3": 527931.9896339405,
+      "bbox_mm": [
+        [
+          100.17277526855469,
+          142.31439208984375,
+          389.4139404296875
+        ],
+        [
+          264.22650146484375,
+          317.51904296875,
+          614.6162719726562
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 78,
+      "name": "hip_right",
+      "file": "meshes/hip_right.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 3000,
+      "volume_mm3": 495223.7616100184,
+      "bbox_mm": [
+        [
+          265.4415588378906,
+          145.4737548828125,
+          392.158935546875
+        ],
+        [
+          428.4770202636719,
+          317.50738525390625,
+          614.4756469726562
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 79,
+      "name": "spinal_cord",
+      "file": "meshes/spinal_cord.glb",
+      "color": [
+        0.9,
+        0.85,
+        0.6
+      ],
+      "faces": 3000,
+      "volume_mm3": 113511.10528059863,
+      "bbox_mm": [
+        [
+          244.40435791015625,
+          178.50013732910156,
+          566.5563354492188
+        ],
+        [
+          281.48577880859375,
+          287.7327880859375,
+          1197.6241455078125
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 80,
+      "name": "gluteus_maximus_left",
+      "file": "meshes/gluteus_maximus_left.glb",
+      "color": [
+        0.74,
+        0.36,
+        0.33
+      ],
+      "faces": 2999,
+      "volume_mm3": 1071789.4255024306,
+      "bbox_mm": [
+        [
+          76.4034423828125,
+          142.24856567382812,
+          318.98626708984375
+        ],
+        [
+          257.4685974121094,
+          227.18760681152344,
+          557.4832153320312
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 81,
+      "name": "gluteus_maximus_right",
+      "file": "meshes/gluteus_maximus_right.glb",
+      "color": [
+        0.74,
+        0.36,
+        0.33
+      ],
+      "faces": 3000,
+      "volume_mm3": 1000295.5146668149,
+      "bbox_mm": [
+        [
+          284.3133544921875,
+          145.38125610351562,
+          319.4992980957031
+        ],
+        [
+          452.5224914550781,
+          223.5199737548828,
+          563.8976440429688
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 82,
+      "name": "gluteus_medius_left",
+      "file": "meshes/gluteus_medius_left.glb",
+      "color": [
+        0.74,
+        0.36,
+        0.33
+      ],
+      "faces": 3000,
+      "volume_mm3": 437330.62624113465,
+      "bbox_mm": [
+        [
+          76.47632598876953,
+          160.4940185546875,
+          464.55712890625
+        ],
+        [
+          187.44773864746094,
+          290.5561828613281,
+          605.7388305664062
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 83,
+      "name": "gluteus_medius_right",
+      "file": "meshes/gluteus_medius_right.glb",
+      "color": [
+        0.74,
+        0.36,
+        0.33
+      ],
+      "faces": 3000,
+      "volume_mm3": 410368.985147944,
+      "bbox_mm": [
+        [
+          341.4627380371094,
+          159.7480010986328,
+          446.4134521484375
+        ],
+        [
+          455.5373840332031,
+          287.487548828125,
+          608.5052490234375
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 84,
+      "name": "gluteus_minimus_left",
+      "file": "meshes/gluteus_minimus_left.glb",
+      "color": [
+        0.74,
+        0.36,
+        0.33
+      ],
+      "faces": 3000,
+      "volume_mm3": 78540.82182496444,
+      "bbox_mm": [
+        [
+          112.47685241699219,
+          217.40151977539062,
+          464.3782653808594
+        ],
+        [
+          163.5765380859375,
+          293.57647705078125,
+          554.5551147460938
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 85,
+      "name": "gluteus_minimus_right",
+      "file": "meshes/gluteus_minimus_right.glb",
+      "color": [
+        0.74,
+        0.36,
+        0.33
+      ],
+      "faces": 3000,
+      "volume_mm3": 86769.10193286277,
+      "bbox_mm": [
+        [
+          362.41265869140625,
+          217.4648895263672,
+          461.31549072265625
+        ],
+        [
+          419.5103454589844,
+          293.5318908691406,
+          560.6597290039062
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 86,
+      "name": "autochthon_left",
+      "file": "meshes/autochthon_left.glb",
+      "color": [
+        0.72,
+        0.35,
+        0.32
+      ],
+      "faces": 3000,
+      "volume_mm3": 806758.9303512195,
+      "bbox_mm": [
+        [
+          162.5560302734375,
+          142.41207885742188,
+          524.8201904296875
+        ],
+        [
+          260.5998229980469,
+          247.49069213867188,
+          1116.6767578125
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 87,
+      "name": "autochthon_right",
+      "file": "meshes/autochthon_right.glb",
+      "color": [
+        0.72,
+        0.35,
+        0.32
+      ],
+      "faces": 3000,
+      "volume_mm3": 777732.9703714997,
+      "bbox_mm": [
+        [
+          257.4544982910156,
+          141.75320434570312,
+          516.4738159179688
+        ],
+        [
+          350.8538818359375,
+          244.48802185058594,
+          1110.3253173828125
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 88,
+      "name": "iliopsoas_left",
+      "file": "meshes/iliopsoas_left.glb",
+      "color": [
+        0.75,
+        0.38,
+        0.34
+      ],
+      "faces": 3000,
+      "volume_mm3": 596460.774078821,
+      "bbox_mm": [
+        [
+          124.72089385986328,
+          199.02801513671875,
+          392.06787109375
+        ],
+        [
+          238.68731689453125,
+          323.7336120605469,
+          755.2450561523438
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 89,
+      "name": "iliopsoas_right",
+      "file": "meshes/iliopsoas_right.glb",
+      "color": [
+        0.75,
+        0.38,
+        0.34
+      ],
+      "faces": 2999,
+      "volume_mm3": 587161.3959315419,
+      "bbox_mm": [
+        [
+          284.2878112792969,
+          195.9940643310547,
+          395.1517639160156
+        ],
+        [
+          398.6336975097656,
+          326.5151672363281,
+          763.8359375
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 90,
+      "name": "brain",
+      "file": "meshes/brain.glb",
+      "color": [
+        0.85,
+        0.75,
+        0.75
+      ],
+      "faces": 3000,
+      "volume_mm3": 1439667.6219653536,
+      "bbox_mm": [
+        [
+          211.49322509765625,
+          226.48513793945312,
+          1200.4595947265625
+        ],
+        [
+          344.9931945800781,
+          404.8801574707031,
+          1332.5245361328125
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 91,
+      "name": "skull",
+      "file": "meshes/skull.glb",
+      "color": [
+        0.94,
+        0.92,
+        0.88
+      ],
+      "faces": 3000,
+      "volume_mm3": 986059.5845547294,
+      "bbox_mm": [
+        [
+          202.07614135742188,
+          217.9974822998047,
+          1100.2076416015625
+        ],
+        [
+          350.4849853515625,
+          416.46514892578125,
+          1343.7559814453125
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 92,
+      "name": "rib_left_1",
+      "file": "meshes/rib_left_1.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 3000,
+      "volume_mm3": 12689.59634021984,
+      "bbox_mm": [
+        [
+          172.36441040039062,
+          232.3201446533203,
+          986.3154907226562
+        ],
+        [
+          217.67222595214844,
+          305.6087341308594,
+          1071.5911865234375
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 93,
+      "name": "rib_left_2",
+      "file": "meshes/rib_left_2.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 2999,
+      "volume_mm3": 18451.13079072336,
+      "bbox_mm": [
+        [
+          136.4154510498047,
+          208.42282104492188,
+          950.4035034179688
+        ],
+        [
+          217.6859130859375,
+          323.53802490234375,
+          1059.55859375
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 94,
+      "name": "rib_left_3",
+      "file": "meshes/rib_left_3.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 2999,
+      "volume_mm3": 19500.859124063558,
+      "bbox_mm": [
+        [
+          115.47058868408203,
+          196.4017791748047,
+          911.3164672851562
+        ],
+        [
+          220.55789184570312,
+          329.61859130859375,
+          1041.67724609375
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 95,
+      "name": "rib_left_4",
+      "file": "meshes/rib_left_4.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 3000,
+      "volume_mm3": 24784.74390677383,
+      "bbox_mm": [
+        [
+          103.44418334960938,
+          184.43310546875,
+          869.396484375
+        ],
+        [
+          217.6222381591797,
+          332.60546875,
+          1017.6932373046875
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 96,
+      "name": "rib_left_5",
+      "file": "meshes/rib_left_5.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 3000,
+      "volume_mm3": 30275.69518732175,
+      "bbox_mm": [
+        [
+          100.43562316894531,
+          175.4351043701172,
+          827.436767578125
+        ],
+        [
+          214.43795776367188,
+          335.5602722167969,
+          992.5698852539062
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 97,
+      "name": "rib_left_6",
+      "file": "meshes/rib_left_6.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 2999,
+      "volume_mm3": 31825.417867896573,
+      "bbox_mm": [
+        [
+          100.44186401367188,
+          169.40553283691406,
+          785.5082397460938
+        ],
+        [
+          211.55831909179688,
+          329.48675537109375,
+          968.5126342773438
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 98,
+      "name": "rib_left_7",
+      "file": "meshes/rib_left_7.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 2999,
+      "volume_mm3": 36435.36041279021,
+      "bbox_mm": [
+        [
+          100.44596862792969,
+          163.45326232910156,
+          749.37353515625
+        ],
+        [
+          214.54965209960938,
+          326.54693603515625,
+          941.558837890625
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 99,
+      "name": "rib_left_8",
+      "file": "meshes/rib_left_8.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 2999,
+      "volume_mm3": 29836.70879783168,
+      "bbox_mm": [
+        [
+          103.42562866210938,
+          157.45472717285156,
+          716.3695068359375
+        ],
+        [
+          214.5741729736328,
+          308.4814147949219,
+          914.6068725585938
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 100,
+      "name": "rib_left_9",
+      "file": "meshes/rib_left_9.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 3000,
+      "volume_mm3": 27255.19470483636,
+      "bbox_mm": [
+        [
+          103.41309356689453,
+          154.41322326660156,
+          695.3856811523438
+        ],
+        [
+          217.58441162109375,
+          290.59075927734375,
+          884.5982666015625
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 101,
+      "name": "rib_left_10",
+      "file": "meshes/rib_left_10.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 2999,
+      "volume_mm3": 20603.335646262643,
+      "bbox_mm": [
+        [
+          109.40605926513672,
+          157.39022827148438,
+          680.2801513671875
+        ],
+        [
+          220.5518035888672,
+          269.5629577636719,
+          851.6134643554688
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 102,
+      "name": "rib_left_11",
+      "file": "meshes/rib_left_11.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 3000,
+      "volume_mm3": 14723.914522970415,
+      "bbox_mm": [
+        [
+          124.34595489501953,
+          163.3693084716797,
+          671.4077758789062
+        ],
+        [
+          223.66172790527344,
+          235.65765380859375,
+          821.6138305664062
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 103,
+      "name": "rib_left_12",
+      "file": "meshes/rib_left_12.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 3000,
+      "volume_mm3": 6371.3975555947445,
+      "bbox_mm": [
+        [
+          151.36453247070312,
+          172.3651123046875,
+          683.3289794921875
+        ],
+        [
+          226.6509552001953,
+          193.68118286132812,
+          776.6405639648438
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 104,
+      "name": "rib_right_1",
+      "file": "meshes/rib_right_1.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 3000,
+      "volume_mm3": 13828.345654947256,
+      "bbox_mm": [
+        [
+          296.38177490234375,
+          241.35845947265625,
+          986.3643188476562
+        ],
+        [
+          344.6704406738281,
+          305.6211242675781,
+          1074.6748046875
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 105,
+      "name": "rib_right_2",
+      "file": "meshes/rib_right_2.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 2999,
+      "volume_mm3": 16388.79967547499,
+      "bbox_mm": [
+        [
+          293.4193115234375,
+          217.33370971679688,
+          944.3839111328125
+        ],
+        [
+          377.62603759765625,
+          326.6710205078125,
+          1056.5755615234375
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 106,
+      "name": "rib_right_3",
+      "file": "meshes/rib_right_3.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 3000,
+      "volume_mm3": 21109.813698133843,
+      "bbox_mm": [
+        [
+          290.4192199707031,
+          202.3927459716797,
+          908.3914794921875
+        ],
+        [
+          398.61395263671875,
+          329.6163330078125,
+          1035.638427734375
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 107,
+      "name": "rib_right_4",
+      "file": "meshes/rib_right_4.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 3000,
+      "volume_mm3": 24748.04764516417,
+      "bbox_mm": [
+        [
+          293.40960693359375,
+          184.52630615234375,
+          866.4614868164062
+        ],
+        [
+          407.6300048828125,
+          335.6283264160156,
+          1013.574951171875
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 108,
+      "name": "rib_right_5",
+      "file": "meshes/rib_right_5.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 3000,
+      "volume_mm3": 30839.251372117822,
+      "bbox_mm": [
+        [
+          290.4354553222656,
+          172.4311981201172,
+          827.36083984375
+        ],
+        [
+          410.5643005371094,
+          332.5484924316406,
+          986.5679321289062
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 109,
+      "name": "rib_right_6",
+      "file": "meshes/rib_right_6.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 3000,
+      "volume_mm3": 35173.00725258691,
+      "bbox_mm": [
+        [
+          293.4568176269531,
+          166.4454803466797,
+          788.4698486328125
+        ],
+        [
+          410.5972595214844,
+          329.4378662109375,
+          965.5682983398438
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 110,
+      "name": "rib_right_7",
+      "file": "meshes/rib_right_7.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 3000,
+      "volume_mm3": 38517.420658687886,
+      "bbox_mm": [
+        [
+          290.4281921386719,
+          160.43304443359375,
+          752.4628295898438
+        ],
+        [
+          407.560302734375,
+          323.63494873046875,
+          941.5502319335938
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 111,
+      "name": "rib_right_8",
+      "file": "meshes/rib_right_8.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 2999,
+      "volume_mm3": 30230.831854294014,
+      "bbox_mm": [
+        [
+          287.4329528808594,
+          157.43878173828125,
+          719.4420776367188
+        ],
+        [
+          407.5614013671875,
+          308.549560546875,
+          914.580810546875
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 112,
+      "name": "rib_right_9",
+      "file": "meshes/rib_right_9.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 2999,
+      "volume_mm3": 27324.694239131833,
+      "bbox_mm": [
+        [
+          287.45172119140625,
+          154.43240356445312,
+          707.3384399414062
+        ],
+        [
+          413.56634521484375,
+          287.5639953613281,
+          884.5653686523438
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 113,
+      "name": "rib_right_10",
+      "file": "meshes/rib_right_10.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 2999,
+      "volume_mm3": 21084.944741074887,
+      "bbox_mm": [
+        [
+          287.3528747558594,
+          154.3612060546875,
+          695.3880004882812
+        ],
+        [
+          407.6022033691406,
+          266.6212463378906,
+          854.632568359375
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 114,
+      "name": "rib_right_11",
+      "file": "meshes/rib_right_11.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 2999,
+      "volume_mm3": 16342.344565369373,
+      "bbox_mm": [
+        [
+          290.3572692871094,
+          157.4266357421875,
+          677.4051513671875
+        ],
+        [
+          395.6761169433594,
+          229.62017822265625,
+          818.6044311523438
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 115,
+      "name": "rib_right_12",
+      "file": "meshes/rib_right_12.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 3000,
+      "volume_mm3": 5803.915463197908,
+      "bbox_mm": [
+        [
+          290.3681945800781,
+          169.3435516357422,
+          689.320556640625
+        ],
+        [
+          365.6553955078125,
+          190.6956329345703,
+          776.6434326171875
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 1
+    },
+    {
+      "label_id": 116,
+      "name": "sternum",
+      "file": "meshes/sternum.glb",
+      "color": [
+        0.92,
+        0.9,
+        0.85
+      ],
+      "faces": 3000,
+      "volume_mm3": 90034.079363101,
+      "bbox_mm": [
+        [
+          223.51309204101562,
+          290.39910888671875,
+          812.385498046875
+        ],
+        [
+          287.55029296875,
+          347.5698547363281,
+          1004.55224609375
+        ]
+      ],
+      "watertight": true,
+      "components_kept": 1
+    },
+    {
+      "label_id": 117,
+      "name": "costal_cartilages",
+      "file": "meshes/costal_cartilages.glb",
+      "color": [
+        0.85,
+        0.85,
+        0.78
+      ],
+      "faces": 3000,
+      "volume_mm3": 176547.9528005301,
+      "bbox_mm": [
+        [
+          117.6714859008789,
+          251.8421630859375,
+          668.3226318359375
+        ],
+        [
+          402.19451904296875,
+          350.90789794921875,
+          1004.5239868164062
+        ]
+      ],
+      "watertight": false,
+      "components_kept": 14
+    }
+  ],
+  "failed": []
+}
